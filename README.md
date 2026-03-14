@@ -4,3 +4,5 @@ Started from Zero to learn where to direct myself when building a MATLAB model o
 
 The glenn Research Center has extremely valuable equations I will be using as documentation for equations where I can plug the output data achieved.
 - https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/
+- http://heroicrelics.org/index.html (Gallery of Aircraft/Missiles) during historic events)
+
