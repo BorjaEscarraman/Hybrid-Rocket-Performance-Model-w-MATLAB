@@ -6,4 +6,6 @@ The glenn Research Center has extremely valuable equations I will be using as do
 - https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/
 - http://heroicrelics.org/index.html (Gallery of Aircraft/Missiles) during historic events)
 - https://www.youtube.com/watch?v=u-jXF1YXxFE - Engineer designing a LRE
+- http://www.braeunig.us/space/basics.htm - Basics of Spaceflight
+
 
