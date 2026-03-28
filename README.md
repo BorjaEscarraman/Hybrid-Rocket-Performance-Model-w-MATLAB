@@ -9,5 +9,7 @@ The glenn Research Center has extremely valuable equations I will be using as do
 - http://www.braeunig.us/space/basics.htm - Basics of Spaceflight
 - https://www.youtube.com/@VDEngineering/videos - Spectacularly Clear Aerospace Engineering Technical Knowledge Walkthroughs
 - https://www.youtube.com/@interfluo6420/videos (General Technical Tool Learning)
+- https://www.youtube.com/watch?v=u-jXF1YXxFE (General Technical Tool Learning 2)
+
 
 
