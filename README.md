@@ -6,7 +6,7 @@ MATLAB - Simulink Sources.
 **The glenn Research Center** has extremely valuable equations I will be using as documentation for equations where I can plug the output data achieved.
 
   CFD Sources.
-  https://www.wolfdynamics.com/index.php
+- https://www.wolfdynamics.com/index.php
   
   Miscellaneous
 - https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/
