@@ -7,7 +7,21 @@ MATLAB - Simulink Sources.
 
 CFD Sources.
 - https://www.wolfdynamics.com/index.php
-  
+
+CAD
+-https://www.youtube.com/watch?v=G7wnGeR_69k&t=185s
+https://ambientcg.com/list?sort=popular (Texture Library)
+
+Engine Technology.
+- https://www.grc.nasa.gov/www/k-12/UEET/StudentSite/engines.html
+- https://www.youtube.com/watch?v=3isXaIQ3Lkk
+
+Additive Manufacturing.
+- https://www.youtube.com/watch?v=P5-jtvYlA1c&sttick=0
+
+C++ Embedded Programming.
+- https://www.youtube.com/watch?v=A_saS93Clgk
+
 Miscellaneous
 - http://heroicrelics.org/index.html (Gallery of Aircraft/Missiles) during historic events)
 - https://www.youtube.com/watch?v=u-jXF1YXxFE - Engineer designing a LRE
@@ -16,6 +30,7 @@ Miscellaneous
 - https://www.youtube.com/@interfluo6420/videos (General Technical Tool Learning)
 - https://www.youtube.com/watch?v=u-jXF1YXxFE (General Technical Tool Learning 2)
 - https://www.youtube.com/@JoshTheEngineer/playlists (General Technical Tool Learning 3)
+- https://encyclopedia.pub/entry/30884?utm
 
 
 
