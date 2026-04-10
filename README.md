@@ -31,6 +31,8 @@ Miscellaneous
 - https://www.youtube.com/watch?v=u-jXF1YXxFE (General Technical Tool Learning 2)
 - https://www.youtube.com/@JoshTheEngineer/playlists (General Technical Tool Learning 3)
 - https://encyclopedia.pub/entry/30884?utm
+- https://everydayastronaut.com/how-to-start-a-rocket-engine/
+- https://everydayastronaut.com/rocket-engine-cycles/
 
 
 
