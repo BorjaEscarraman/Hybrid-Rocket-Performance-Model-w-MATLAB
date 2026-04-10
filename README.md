@@ -9,8 +9,8 @@ CFD Sources.
 - https://www.wolfdynamics.com/index.php
 
 CAD
--https://www.youtube.com/watch?v=G7wnGeR_69k&t=185s
-https://ambientcg.com/list?sort=popular (Texture Library)
+- https://www.youtube.com/watch?v=G7wnGeR_69k&t=185s
+- https://ambientcg.com/list?sort=popular (Texture Library)
 
 Engine Technology.
 - https://www.grc.nasa.gov/www/k-12/UEET/StudentSite/engines.html
