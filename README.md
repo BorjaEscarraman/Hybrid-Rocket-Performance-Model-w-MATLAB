@@ -33,6 +33,15 @@ Miscellaneous
 - https://encyclopedia.pub/entry/30884?utm
 - https://everydayastronaut.com/how-to-start-a-rocket-engine/
 - https://everydayastronaut.com/rocket-engine-cycles/
+- https://blog.ablspacesystems.com/p/building-e2
+- https://www.galaxus.at/en/page/how-to-build-a-rocket-engine-19640
+- https://www.instructables.com/Simple-Solid-Rocket-Engine/
+- https://www.youtube.com/watch?v=eVvIZ3f2tSU
+- https://www.youtube.com/watch?v=UXIOxR5ImjQ
+- https://www.youtube.com/watch?v=UXIOxR5ImjQ (model and Simulation Rocketry).
+- https://www.youtube.com/watch?v=ae-5nOkSN_k (Rocket Engine Anatomy).
+- https://dsiac.dtic.mil/technical-inquiries/notable/introduction-to-guidance-navigation-and-control-gnc/
+- https://empoweringpumps.com/cfturbo-conceptual-design-of-a-cryogenic-rocket-turbopump/
 
 
 
