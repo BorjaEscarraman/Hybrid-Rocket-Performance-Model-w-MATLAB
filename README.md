@@ -19,8 +19,14 @@ Engine Technology.
 Additive Manufacturing.
 - https://www.youtube.com/watch?v=P5-jtvYlA1c&sttick=0
 
+Python.
+- https://krpc.github.io/krpc/python.html [kRPC Library/reference]
+
+
 C++ Embedded Programming.
 - https://www.youtube.com/watch?v=A_saS93Clgk
+
+ 
 
 Miscellaneous
 - http://heroicrelics.org/index.html (Gallery of Aircraft/Missiles) during historic events)
