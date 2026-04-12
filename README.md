@@ -48,6 +48,8 @@ Miscellaneous
 - https://www.youtube.com/watch?v=ae-5nOkSN_k (Rocket Engine Anatomy).
 - https://dsiac.dtic.mil/technical-inquiries/notable/introduction-to-guidance-navigation-and-control-gnc/
 - https://empoweringpumps.com/cfturbo-conceptual-design-of-a-cryogenic-rocket-turbopump/
+- https://www.youtube.com/watch?v=HMnHlsxwBGI [Specific Aerospace Explanations]
+
 
 
 
