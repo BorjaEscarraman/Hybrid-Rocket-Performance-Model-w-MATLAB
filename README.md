@@ -49,6 +49,8 @@ Miscellaneous
 - https://dsiac.dtic.mil/technical-inquiries/notable/introduction-to-guidance-navigation-and-control-gnc/
 - https://empoweringpumps.com/cfturbo-conceptual-design-of-a-cryogenic-rocket-turbopump/
 - https://www.youtube.com/watch?v=HMnHlsxwBGI [Specific Aerospace Explanations]
+- https://www.youtube.com/@scottmanley/videos
+- 
 
 
 
