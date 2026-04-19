@@ -21,10 +21,14 @@ Additive Manufacturing.
 
 Python.
 - https://krpc.github.io/krpc/python.html [kRPC Library/reference]
+- https://docs.python.org/3/tutorial/index.html [Python's Official Documentation ]
+- https://www.w3schools.com/python/python_intro.asp
+- https://automatetheboringstuff.com
 
 
-C++ Embedded Programming.
+C++
 - https://www.youtube.com/watch?v=A_saS93Clgk
+- https://www.learncpp.com
 
  
 
