@@ -24,6 +24,7 @@ Python.
 - https://docs.python.org/3/tutorial/index.html [Python's Official Documentation ]
 - https://www.w3schools.com/python/python_intro.asp
 - https://automatetheboringstuff.com
+- https://docs.python-guide.org [The Hitchhiker’s Guide to Python!]
 
 
 C++
