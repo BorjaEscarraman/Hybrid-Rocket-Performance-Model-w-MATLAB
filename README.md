@@ -27,7 +27,10 @@ Python Beginner up to Aerospace Engineering Level.
 - https://docs.python-guide.org [The Hitchhiker’s Guide to Python!]
 - https://docs.rocketpy.org/en/latest/index.html [RocketPy] --> Rocket Trajectory Simulations Library.
 - https://mdolab-openaerostruct.readthedocs-hosted.com/en/latest/ [Aerostructural Optimization using OpenMDAO -- High-Performance Python Framework]
-- 
+- https://numpy.org/doc/stable/user/absolute_beginners [Numerical Python]
+- https://docs.scipy.org/doc/scipy/tutorial/ [Mathematical Algorithms built on NumPy]
+- https://github.com/AeroPython/Curso_AeroPython [Aeropython Repo]
+- https://aerosandbox.readthedocs.io/en/master/
 
 
 
