@@ -31,6 +31,7 @@ Python Beginner up to Aerospace Engineering Level.
 - https://docs.scipy.org/doc/scipy/tutorial/ [Mathematical Algorithms built on NumPy]
 - https://github.com/AeroPython/Curso_AeroPython [Aeropython Repo]
 - https://aerosandbox.readthedocs.io/en/master/
+- https://jupyter.org
 
 
 
