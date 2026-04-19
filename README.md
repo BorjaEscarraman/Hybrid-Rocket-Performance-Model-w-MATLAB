@@ -19,12 +19,16 @@ Engine Technology.
 Additive Manufacturing.
 - https://www.youtube.com/watch?v=P5-jtvYlA1c&sttick=0
 
-Python.
+Python Beginner up to Aerospace Engineering Level.
 - https://krpc.github.io/krpc/python.html [kRPC Library/reference]
 - https://docs.python.org/3/tutorial/index.html [Python's Official Documentation ]
 - https://www.w3schools.com/python/python_intro.asp
 - https://automatetheboringstuff.com
 - https://docs.python-guide.org [The Hitchhiker’s Guide to Python!]
+- https://docs.rocketpy.org/en/latest/index.html [RocketPy] --> Rocket Trajectory Simulations Library.
+- https://mdolab-openaerostruct.readthedocs-hosted.com/en/latest/ [Aerostructural Optimization using OpenMDAO -- High-Performance Python Framework]
+- 
+
 
 
 C++
