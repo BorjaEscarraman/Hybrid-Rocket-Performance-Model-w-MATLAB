@@ -1,5 +1,6 @@
-from datetime import datetime # Show updated datetime on every run.
-print(datetime.now())
+from datetime import datetime # Show updated datetime on every log. Left 
+
+print("Starlink Group 17-22,", datetime.now()) # Cleaner instead of datime.datetime.now()
 
 # Following through all 27 Phases of Group 17, Launch 22nd of the Starlink Payloads sent w/ Falcon 9.
 
@@ -9,9 +10,6 @@ print(datetime.now())
 # LOX = liquid oxygen
 # Prop load = propellant loading
 # Strongback = pad support arm/tower structure
-# Max-Q = peak aerodynamic loading
-# MECO = main engine cutoff
-# SES = second engine start
 # SECO = second engine cutoff
 # Fairing = protective nose shell for payload
 
@@ -27,7 +25,7 @@ if Robert_Plant_verf1: # Check once.
 else:
     print("SHUTDOWN")
 
-# 2 - Propellant Load begins.
+# 2 - Propellant Load [Into the tanks]begins.
 
 # Define Propellant & Falcon 9 mass to check for successful loading.
 LOX = 9000 #kg, Oxidizer.
@@ -87,27 +85,42 @@ if percent > 90 and Full_capacity:
     #     print("Loading Completed")
     #     print("Proceed to Check 3")
 
-# 3 - LOX Chilldown - Falcon 9's Hardware is being adapted for cryogenic temperatures to maximize efficiency of LOX flow
-# and avoid boil off due to contact of warm metal/pipes/hardware [Causing issues like thermal shock, cavitation and unstable flow].
+# 3 - LOX Chilldown - Before the [Merlin] engines start... some of the LOX [Previously Loaded in the tanks] flows through the feed system and related hardware.
+# With the goal of adapting Falcon 9's related hardware to cryogenic temperatures and maximize efficiency of LOX flow... as potential 
+# warm metal/pipes/hardware could cause boil off the LOX. [and other issues like thermal shock, cavitation and unstable flow]. 
+        #Imagine cooling a cup before throwing ice, to make it last longer.
+
+LOX_T = (-297 - 32)/ 1.8 # Google gave Fahrenheit [F] LOX, so I converted to Celsius [C]. Conversion for "Operators" practice.
+#print(LOX_T) #How do I control the amount of decimals shown?
+
+# Quick lesson. [f-strings and decimals]
+# First I'll have to understand what "f-strings" are... 
+    # They build strings and insert variables directly inside them.
+# How this differs from normal string variables? Well, 'normal strings' just store text, and 'f-strings' store both text and allow for value insertion.
+        
+        #name = "Borja"
+        #print(f"Hello {name}") # the 'f' tells python this string may contain variables inside of the curly braces.
+
+# x = 9.323121
+# print(f"{x:.2f}") 
+# (1) : starts format... (2) .2 = amount of digits shown after decimal... (3) f = completes the decimal full notation = [.2f].
+# What's the difference between (), {} and [] in python?
+#() groups things or call something. i.e. used for function calls, math grouping and tuples...
+#[] ordered collection / grab position. i.e. used for lists, access indices, slicing...
+#{} key-value data or special insert spots. i.e.. used for dictionaries, sets, f-strings inserts...
 
 
-LOX_T = (-340 - 32)/ 1.8 # Found Fahrenheit, Converted to Celsius [C].
-print(LOX_T)
-RP_1_T = 2
+# Now is appropiate to allocate my LOX Converted output too...
+print(f"{LOX_T:.1f}")
 
 
-#LD Verifies Go for Launch.
-# if Robert_Plant_verf1 and Robert_Plant_verf2:
-# print ("Proceed for Ignition") 
-# else:
-    # print ("SHUTDOWN!")
-
+# Add Delay for LOX chilldown right after propellant is fully loaded into the tanks... Make it 5 seconds. Once it passes, the plumbing system allows the LOX flow.
+# Let's make this a percentage of much of the LOX was used and how much it covered with that amount for the next. if > ...% follow to next stage... if < ..%
+# Add Delay it 7 seconds until done. Then next phase.  
 
 
 
 # 4 - 2nd Stage (S2) LOX load begins.
-
-
 
 
 # 5 - Engine Chill
@@ -117,6 +130,11 @@ RP_1_T = 2
 # 9 - F9 In Startup
 # 10 - TanK Press
 # 11 - LD Go for Launch
+        #LD Verifies Go for Launch.
+        # if Robert_Plant_verf1 and Robert_Plant_verf2:
+        # print ("Proceed for Ignition") 
+        # else:
+            # print ("SHUTDOWN!")
 
 # Launch Phase [#2] - Ignite and Punch through the Atmosphere.
 
@@ -125,11 +143,16 @@ RP_1_T = 2
 # 14 -  Max-Q
 
 # Staging Phase [#3] - Throw away dead weight. [First Stage Booster - Heavyweight figther against extreme aerodynamic loads].
+# Max-Q = peak aerodynamic loading
 
 
 # 15 - MECO
+# MECO = main engine cutoff
+
 # 16 - Stage Separation
 # 17 - SES-1  
+# SES = second engine start
+
 # 18 - Fairing Separation
 # 19 - 1st Stage Entry Burn
 # 20 - 1st Stage Entry Burn Ends
@@ -141,6 +164,8 @@ RP_1_T = 2
 # 22 - 1st Stage Landing  
 # 23 - 2nd Stage Engine Cutoff (SECO-1)
 # 24 - 2nd Stage Engine Start (SES-1)
+
+
 # 25 - 2nd Stage Engine Cutoff (SECO-2)
 # 26 - Starlink Deploy
 
