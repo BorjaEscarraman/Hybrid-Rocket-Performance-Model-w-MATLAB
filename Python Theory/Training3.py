@@ -8,11 +8,11 @@ captain = "Luffy"  #It gives only 1 box = 1 fact. Luffy Is the captain.
 zoro = {
    "name": "Zoro",
    "role": "Luffy's Second Hand",
-   "Combat Style": "Swordsman", # Previously missed a comma here, and the script broke.
+   "Combat Style": "Swordsman", # Previously missed a comma here causing syntax error.
    "Bounty": 1_111_000_000
 }
 
-print(zoro["name"])
+print(zoro["name"]) # Access the value stored under the key "name".
 
 # But wait, how are Dictionaries different from Lists? they're roles are similar. 1 box = Multiple Items.
 # In essence... Lists are lineups and Dictionaries are databases.
@@ -38,5 +38,8 @@ straw_hats = {
 
 print(straw_hats["Captain"])
 
-
-
+# Their similarity lies in their syntax;
+    # Words must still be inside of strings, commas, and it must be printed.
+# The main 2 Differences Identified are;
+    # Lists calls variables with indices... Dictionaries with labels.
+    # Lists structure is horizontally boxed with []... Dictionaries is vertically boxed with {}.
