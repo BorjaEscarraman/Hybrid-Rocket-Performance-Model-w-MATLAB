@@ -16,25 +16,28 @@ while translation < Distance:
     print("Distance =", translation, "m" )
 
     if translation == 100:
-        print("The",Titan,"has arrived to Rose's outer edge")
+        print("The",Titan,"has arrived to", Wall,"outer edge")
 
 # Define bool variables that activate Soldier's Efforts once the Titans arrive
 #####
 
-# Now let's define a function that represents the health of the Abnormal,
+# Now let's define a function that represents the health [Fix = Damage Combination Polynomial] of the Abnormal,
 # and what I plug are the Wing's of Liberty Soldiers attack damage.
 
-Levi = -450 # HP
-Mikasa = -240 # HP
-Erwin = -90 # HP
+Levi = 250 
+Mikasa = 120 # HP
+Erwin = 70 # HP
 
-Abnormal_Health = 1000 #HP
+#Abnormal_Health = 1000 #HP I mistakenly defined a variable with the name of the function, thinking it was a variable. No need for this!
 
 def Abnormal_Health (Levi,Mikasa,Erwin):
-    result = -2*Levi + 3*Mikasa + 2*Erwin
-    if result == 0:
+    health = 1000
+    total_damage = 2*Levi + 3*Mikasa + 2*Erwin
+    remaining_health = health - total_damage
+    if remaining_health == 0: # Finding the root here implies that we have killed the Titan. Satisfying the condition of Humankind's safety.
         print("It's Over")
-    return result
+        print("Wall Rose Has Been Saved from an Abnormal")
+    return remaining_health
 
     # if Abnormal_Health == 0: This is my previous attempt where the conditional was incorrectly used.
     #     print("It's Over")
@@ -42,8 +45,8 @@ def Abnormal_Health (Levi,Mikasa,Erwin):
 
 print(Abnormal_Health(Levi,Mikasa,Erwin)) # This shows me what my function just computed.
 
-print("Wall Rose Has Been Saved from an Abnormal") # Which is ridiculous, Levi Alone, could destroy thousands of these in minutes.
-# Anyways good practice...
+ # Which is ridiculous, Levi Alone, could destroy thousands of these in minutes.
+# Anyways good practice... [Issue : this prinnt is unconditional, so it will print no matter what.]
 
 
     
