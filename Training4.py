@@ -15,7 +15,7 @@ while translation < Distance:
     translation += 20
     print("Distance =", translation, "m" )
 
-    if translation == 100:
+    if translation == Distance:
         print("The",Titan,"has arrived to", Wall,"outer edge")
 
 # Define bool variables that activate Soldier's Efforts once the Titans arrive
@@ -27,14 +27,15 @@ while translation < Distance:
 Levi = 250 
 Mikasa = 120 # HP
 Erwin = 70 # HP
+Abnormal_Health = 1000
 
 #Abnormal_Health = 1000 #HP I mistakenly defined a variable with the name of the function, thinking it was a variable. No need for this!
 
-def Abnormal_Health (Levi,Mikasa,Erwin):
-    health = 1000
+def Abnormal_Remaining_HP (Abnormal_Health,Levi,Mikasa,Erwin):
+    #Health = 1000 #Hidden Constant, non-reusable.
     total_damage = 2*Levi + 3*Mikasa + 2*Erwin
-    remaining_health = health - total_damage
-    if remaining_health == 0: # Finding the root here implies that we have killed the Titan. Satisfying the condition of Humankind's safety.
+    remaining_health = Abnormal_Health - total_damage
+    if remaining_health <= 0: # Finding the root here implies that we have killed the Titan. Satisfying the condition of Humankind's safety.
         print("It's Over")
         print("Wall Rose Has Been Saved from an Abnormal")
     return remaining_health
