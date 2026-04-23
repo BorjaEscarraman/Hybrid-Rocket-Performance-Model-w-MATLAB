@@ -24,14 +24,14 @@ while translation < Distance:
 # Now let's define a function that represents the health of the Abnormal,
 # and what I plug are the Wing's of Liberty Soldiers attack damage.
 
-Levi = -2 # HP
-Mikasa = -3 # HP
+Levi = -450 # HP
+Mikasa = -240 # HP
 Erwin = -90 # HP
 
 Abnormal_Health = 1000 #HP
 
 def Abnormal_Health (Levi,Mikasa,Erwin):
-    result = -450*Levi + 240*Mikasa + 2*Erwin
+    result = -2*Levi + 3*Mikasa + 2*Erwin
     if result == 0:
         print("It's Over")
     return result
