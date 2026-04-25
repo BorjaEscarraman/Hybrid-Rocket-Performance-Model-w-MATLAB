@@ -7,15 +7,17 @@
     # Function (5), machine that conserves physics / equations for reusability.
     # Analogy --> Demon Slayer.
 
-# Environment... Tanjiro fights Muzan. I want them to throw attacks to each other. Make them dodge erratically, 
-#[Positions driven by random indices within a list.]
+# Context... Tanjiro fights Muzan. I want them to throw attacks to each other. Make them dodge erratically [dodge position driven by random indices within a range.],
+# and develop new abilities during the combat. 
 
-# Dictionaries and lists are dominant...
-Tanjiro = { # Define his fighting style Dictionary by how much damage each technique causes.
-    "Water Breathing": { # Water Form, he's trained form. Since he has 10 forms of this trained style.
-         # Could I define a list within a key in the dictionary? Yes! [Corrected, Initially a used a list,
-         # But I wanted to attach a key [Not an index, which is a mathematical position number to call values in a list.] 
-         # with a damage count, so I "nested the dictionary" which is a new concept for me.]
+# Disclaimer... I do not read the manga, so I wont be able to define Muzan's nor Tanjiro's Strongest Combat Level, so I'll go with what the anime showcased so far.
+
+# Define Tanjiro and Muzan's Fighting Styles with Dictionaries...
+Tanjiro = { # How much damage each technique causes?
+    "Water Breathing": { # Water Form, his trained fighting form. Since he has 10 forms of this trained style...
+         # Could I define a list within a key in the dictionary? Yes!.... Corrected, Initially I used a list,
+         # But I wanted to attach a damage count [Not an index, which is a mathematical position number to call values in a list.] 
+         # to the style, so I "nested the dictionary" to have double keys. NEW CONCEPT].
         "First Form, Water Surface Slash": 2500, # Damage.
          "Second Form, Water Wheel": 3000,
          "Second Form, Lateral Water Wheel": 3500,
@@ -27,25 +29,42 @@ Tanjiro = { # Define his fighting style Dictionary by how much damage each techn
          "Seventh Form: Drop Ripple Thrust": 6500,
          "Eighth Form: Waterfall Basin": 7000,
          "Ninth Form: Splashing Water Flow": 7500,
-         "Tenth Form: Constant Flux": 8000,
+         "Tenth Form: Constant Flux": 8000
     } , # Commas must be after curly bracket to follow up with the outer dictionary, and avoid syntax error.
 
-    "Hinokami Kagura": 10_500, # Sun Breathing, he's innate form.
+    "Hinokami Kagura": 10_500, # Sun Breathing, his innate fighting form.
     "Demon Slayer Mark lvl 1": 3000, # The red mark in his face. Upgrade lvl's by 3x.
     "Demon Slayer Mark lvl 2": 9000, # 
     "Demon Slayer Mark lvl 3": 27_000,
     "Forehead": 10000000,
     "Raw_sword_style": 900
-    
 }
 
-print(Tanjiro["Water Breathing"]["Second Form, Water Wheel"]) # To access the key I must use squared brackets... since it's nested, double that.
+print(Tanjiro["Water Breathing"]["Second Form, Water Wheel"]) # To access a key I must use squared brackets... since it's nested, double that. [inner Dictionary.]
+print(Tanjiro["Hinokami Kagura"]) # Outer Dictionary.
+# Both Inner and Outer dictionaries work properly, Cool!
 
-Invisible_world = False # Give tanjiro the ability to activate the Invisible World Ability learned in the Infinity Castle Part 1.
+Invisible_world = False # Defined Tanjiro's secret ability "Invisible World" learned in the Infinity Castle Part 1 to Maximize his dodging / fighting capability.
+
 
 Muzan = { # Since I am unaware of how strong Muzan is and his abilities, I'll define his layers to be defeated.
+    "Shapeshifting": "Camouflaged",
+    "Blood Poisoning": "Poisoned", # Tanjiro's gets fatigued and his HP Decreases during the fight.
+    "Absorption": { # Muzan eats one of these to increase his HP and strenght.
+        "Akaza": { # Could I add double value?
+            "HP": 6500,
+            "Strength": 2000,
+        },
+        "Doma": {
+            "HP": 9000,
+            "Strength": 4500,
+        },
+    "Kokushibo": 10_000,
+    }, 
+    "Instant Regeneration": True # How could I enable this ability? Booleans are possible in Dictionary-Key-definition? They are.
+} 
 
-}
+print(Muzan["Absorption"]["Akaza"]["HP"])
 
 # Tatakae Time!
 #note. Make Muzan Immnue to some of Tanjiro's Techniques depending on which layer we are. On that account, Tanjiro
@@ -62,6 +81,7 @@ Muzan = { # Since I am unaware of how strong Muzan is and his abilities, I'll de
 # def Combat (Tanjiro, Muzan):
 
 
+# Where are they fighting? Let's go with the Inner most layer of the Infinity Castle's Labyrinth.
 
 
 
