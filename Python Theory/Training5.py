@@ -46,7 +46,6 @@ print(Tanjiro["Hinokami Kagura"]) # Outer Dictionary.
 
 Invisible_world = False # Defined Tanjiro's secret ability "Invisible World" learned in the Infinity Castle Part 1 to Maximize his dodging / fighting capability.
 
-
 Muzan = { # Since I am unaware of how strong Muzan is and his abilities, I'll define his layers to be defeated.
     "Shapeshifting": "Camouflaged",
     "Blood Poisoning": "Poisoned", # Tanjiro's gets fatigued and his HP Decreases during the fight.
@@ -67,15 +66,16 @@ Muzan = { # Since I am unaware of how strong Muzan is and his abilities, I'll de
 print(Muzan["Absorption"]["Akaza"]["HP"])
 
 # Tatakae Time!
-#note. Make Muzan Immnue to some of Tanjiro's Techniques depending on which layer we are. On that account, Tanjiro
-# will have to develop a new technique in the middle of the fight, give him a better chance.
+# note. Make Muzan Immune to some of Tanjiro's Techniques depending on which layer we are. On that account, Tanjiro
+# note 2. Tanjiro will have to develop a new technique in the middle of the fight, to give him a better chance against the Invincible & Nefarious Muzan.
 
-# import random
+# How can I call dictionary key within a loop or funtion?
+import random
 
-# Tanjiro_dodging = list(range(1,101))
+Tanjiro_dodging = list(range(1,101))
 
-# for dodge in range(Tanjiro_dodging):
-#     print(random.randint[dodge])
+for dodge in range(Tanjiro_dodging):
+    print(random.randint[dodge])
 
 
 # def Combat (Tanjiro, Muzan):
