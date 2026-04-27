@@ -58,12 +58,13 @@ Tanjiro = { # How much damage each technique causes?
     "Raw_sword_style": 900
 }
 
-# print(Tanjiro["Water Breathing"]["Second Form, Water Wheel"]) # To access a key I must use squared brackets... since it's nested, double that. [inner Dictionary.]
-# print(Tanjiro["Hinokami Kagura"]) # Outer Dictionary.
+# print(Tanjiro["Water Breathing"]["Second Form, Water Wheel!"]) # To access a key I must use squared brackets... since it's nested, double that. [inner Dictionary.]
+# print(Tanjiro["Sun Breathing"]) # Outer Dictionary.
 # Both Inner and Outer dictionaries work properly, Cool!
 
-# How can I call the Water Breathing nested dictionary keys only when the randomized hits Water Breathing key? Accomplished down below.
-breathing_style = random.choice(list(Tanjiro)) # Random.choice, picks a random item from my dictionary. I also converted my keys into a list.
+# How could I call nested dictionary's keys?
+# How can I call the Water Breathing nested dictionary keys only when the random choice hits Water Breathing key? Accomplished down below.
+breathing_style = random.choice(list(Tanjiro)) # Random.choice, picks a random item from my dictionary. I also converted my keys into a list, since random.choice only works with indices.
 
 print(breathing_style)
 
@@ -80,19 +81,6 @@ elif breathing_style == "Sun Breathing":
 
     print(form)
     print(technique)
-
-
-
-#This is the randomizer I'll need to call the Techniques during the fight. [Corrected above]
-            # if random_technique2 in range(len(random_technique1)):
-            #     print(random_technique2)
-
-            # random_technique_damage = Tanjiro[random_technique]
-
-            # print(random_technique,"=", random_technique_damage) 
-
-# How could I call nested dictionary's keys?
-
 
 
 Invisible_world = False # Defined Tanjiro's secret ability "Invisible World" learned in the Infinity Castle Part 1 to Maximize his dodging / fighting capability.
