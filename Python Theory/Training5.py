@@ -18,8 +18,9 @@ import random # built-in random module imported for randomized calls on techniqu
 #environments [To account for the Tambourine Demon that helps muzan change surroundings]
 
 # Define Tanjiro and Muzan's Fighting Styles with Dictionaries...
+
 Tanjiro = { # How much damage each technique causes?
-    "Water Breathing": { # Water Form, his trained fighting form. Since he has 10 forms of this trained style...
+    "Water Breathing": { # his trained fighting Style. Since he has 10 forms of this trained style...
          # Could I define a list within a key in the dictionary? Yes!.... Corrected, Initially I used a list,
          # But I wanted to attach a damage count [Not an index, which is a mathematical position number to call values in a list.] 
          # to the style, so I "nested the dictionary" to have double keys. NEW CONCEPT].
@@ -37,10 +38,22 @@ Tanjiro = { # How much damage each technique causes?
          "Tenth Form: Constant Flux!": 8000
     } , # Commas must be after curly bracket to follow up with the outer dictionary, and avoid syntax error.
 
-    "Hinokami Kagura!": 10_500, # Sun Breathing, his innate fighting form.
-    "Demon Slayer Mark lvl 1": 3000, # The red mark in his face. Upgrade lvl's by 3x.
-    "Demon Slayer Mark lvl 2": 9000, # 
-    "Demon Slayer Mark lvl 3": 27_000,
+    "Sun Breathing": { # his innate fighting Style.
+        "First Form: Dance!": 5000,
+        "Second Form: Clear Blue Sky!": 6000,
+        "Third Form: Raging Sun!": 7000,
+        "Fifth Form: Fire Wheel!": 8000,
+        "Sixth Form: Burning Bones, Summer Sun!": 9000,
+        "Seventh Form: Sunflower Thrust!": 10_000,
+        "Eighth Form: Sunflower Lance!": 11_000,
+        "Ninth Form: Setting Sun Transformation!": 12_000,
+        "Tenth Form: Raging Sun!": 13_000,
+        "Eleventh Form: Fake Rainbow!": 14_000,
+        "Twelfth Form: Flame Dance!": 15_000
+    } , 
+    # "Demon Slayer Mark lvl 1": 3000, # The red mark in his face. Upgrade lvl's by 3x.
+    # "Demon Slayer Mark lvl 2": 9000, # These are not breathing styles! Nest them.
+    # "Demon Slayer Mark lvl 3": 27_000,
     "Forehead": 10000000,
     "Raw_sword_style": 900
 }
@@ -49,16 +62,34 @@ Tanjiro = { # How much damage each technique causes?
 # print(Tanjiro["Hinokami Kagura"]) # Outer Dictionary.
 # Both Inner and Outer dictionaries work properly, Cool!
 
-random_technique = random.choice(list(Tanjiro["Water Breathing"])) # Random.choice, picks a random item from my dictionary, after converting keys into a list.
-#This is the randomizer I'll need to call the Techniques during the fight.
-# form = random.choice(list(Tanjiro["Water Breathing"]))
-# print(form)
+# How can I call the Water Breathing nested dictionary keys only when the randomized hits Water Breathing key? Accomplished down below.
+breathing_style = random.choice(list(Tanjiro)) # Random.choice, picks a random item from my dictionary. I also converted my keys into a list.
 
-print(random_technique)
+print(breathing_style)
 
-# random_technique_damage = Tanjiro[random_technique]
+if breathing_style == "Water Breathing":
+    form = random.choice(list(Tanjiro["Water Breathing"])) 
+    technique = Tanjiro["Water Breathing"][form]
 
-# print(random_technique,"=", random_technique_damage) 
+    print(form)
+    print(technique)
+
+elif breathing_style == "Sun Breathing":
+    form = random.choice(list(Tanjiro["Sun Breathing"]))
+    technique = Tanjiro["Sun Breathing"][form]
+
+    print(form)
+    print(technique)
+
+
+
+#This is the randomizer I'll need to call the Techniques during the fight. [Corrected above]
+            # if random_technique2 in range(len(random_technique1)):
+            #     print(random_technique2)
+
+            # random_technique_damage = Tanjiro[random_technique]
+
+            # print(random_technique,"=", random_technique_damage) 
 
 # How could I call nested dictionary's keys?
 
@@ -84,7 +115,7 @@ Muzan = { # Since I am unaware of how strong Muzan is and his abilities, I'll de
     "Instant Regeneration": True # How could I enable this ability? Booleans are possible in Dictionary-Key-definition? They are.
 } 
 
-print(Muzan["Absorption"]["Akaza"]["HP"])
+# print(Muzan["Absorption"]["Akaza"]["HP"])
 
 # Tatakae!
 # note. Make Muzan Immune to some of Tanjiro's Techniques depending on which layer we are.
