@@ -66,12 +66,13 @@ Tanjiro = { # How much damage each technique causes?
 # How can I call the Water Breathing nested dictionary keys only when the random choice hits Water Breathing key? Accomplished down below.
 breathing_style = random.choice(list(Tanjiro)) # Random.choice, picks a random item from my dictionary. I also converted my keys into a list, since random.choice only works with indices.
 
-print(breathing_style)
+# print(breathing_style)
 
 if breathing_style == "Water Breathing":
     form = random.choice(list(Tanjiro["Water Breathing"])) 
     technique = Tanjiro["Water Breathing"][form]
 
+    # Calls out the Technique like the Character would do!
     print(form)
     print(technique)
 
@@ -103,11 +104,61 @@ Muzan = { # Since I am unaware of how strong Muzan is and his abilities, I'll de
     "Instant Regeneration": True # How could I enable this ability? Booleans are possible in Dictionary-Key-definition? They are.
 } 
 
-# print(Muzan["Absorption"]["Akaza"]["HP"])
+# print(Muzan["Absorption"]["Akaza"]["HP"]) # Calling out Muzan Abilities. The Nested Dictionary Works!
 
-# Tatakae!
-# note. Make Muzan Immune to some of Tanjiro's Techniques depending on which layer we are.
-# note 2. Tanjiro will have to develop a new technique in the middle of the fight, to stand a chance against the Invincible & Nefarious Muzan.
+# Muzan needs the same randomizer for his fighting style!
+Demon_Style = random.choice(list(Muzan))
+
+if Demon_Style == "Absorption":
+    form = random.choice(list(Muzan["Absorption"]))
+    technique = Muzan["Absorption"][form]
+
+    print(form)
+    print(technique)
+
+
+# print(Demon_Style)
+
+
+##########
+#Tatakae!#
+###################################
+# Make Tanjiro have the first hit.#
+###################################
+
+# Starting Health of Opponents.
+Tanjiro_HP = 10_000
+Muzan_HP = 90_000
+
+# Randomizer for who attacks...
+Muzan_vs_Tanjiro = [1,0,1,0,1,0,1,0,1,0,1] # Muzan == 0, Tanjiro == 1.
+Attack_Selector = random.choice(Muzan_vs_Tanjiro)
+print(Attack_Selector)
+
+if Attack_Selector == 1:
+    print(breathing_style)
+
+elif Attack_Selector == 0:
+    print(Demon_Style)
+
+
+
+
+# def Combat (Tanjiro, Muzan):
+#     tanjiro_attacks = false
+    
+
+    
+        
+
+
+
+
+
+
+
+
+
 
 # How can I call dictionary keys within a loop? To summon the randomized_keys during the fight.
 # for form in Tanjiro.items():
@@ -126,7 +177,8 @@ Muzan = { # Since I am unaware of how strong Muzan is and his abilities, I'll de
 
 
 # Where are they fighting? Let's go with the Inner most layer of the Infinity Castle's Labyrinth.
-
+# note. Make Muzan Immune to some of Tanjiro's Techniques depending on which layer we are.
+# note 2. Tanjiro will have to develop a new technique in the middle of the fight, to stand a chance against the Invincible & Nefarious Muzan.
 
 
 
