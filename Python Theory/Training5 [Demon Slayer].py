@@ -54,8 +54,8 @@ Tanjiro = { # How much damage each technique causes?
     # "Demon Slayer Mark lvl 1": 3000, # The red mark in his face. Upgrade lvl's by 3x.
     # "Demon Slayer Mark lvl 2": 9000, # These are not breathing styles! Nest them.
     # "Demon Slayer Mark lvl 3": 27_000,
-    "Forehead": 10000000,
-    "Raw_sword_style": 900
+    "Forehead": 10000000, # When he has no energy he utilizes these (1)
+    "Raw_sword_style": 900 # (2)
 }
 
 # print(Tanjiro["Water Breathing"]["Second Form, Water Wheel!"]) # To access a key I must use squared brackets... since it's nested, double that. [inner Dictionary.]
@@ -68,20 +68,24 @@ breathing_style = random.choice(list(Tanjiro)) # Random.choice, picks a random i
 
 # print(breathing_style)
 
+# Make this a function to call it during the fight!
 if breathing_style == "Water Breathing":
     form = random.choice(list(Tanjiro["Water Breathing"])) 
-    technique = Tanjiro["Water Breathing"][form]
+    Damage = Tanjiro["Water Breathing"][form]
 
     # Calls out the Technique like the Character would do!
-    print(form)
-    print(technique)
+    print(form, 'Damage =', Damage)
+
+    # print(Damage)
 
 elif breathing_style == "Sun Breathing":
     form = random.choice(list(Tanjiro["Sun Breathing"]))
-    technique = Tanjiro["Sun Breathing"][form]
+    Damage = Tanjiro["Sun Breathing"][form]
 
-    print(form)
-    print(technique)
+    print(form, 'Damage =', Damage)
+    
+else:
+    print("Tanjiro has No Energy...", "FOREHEAD =", Tanjiro["Forehead"])
 
 
 Invisible_world = False # Defined Tanjiro's secret ability "Invisible World" learned in the Infinity Castle Part 1 to Maximize his dodging / fighting capability.
@@ -107,18 +111,25 @@ Muzan = { # Since I am unaware of how strong Muzan is and his abilities, I'll de
 # print(Muzan["Absorption"]["Akaza"]["HP"]) # Calling out Muzan Abilities. The Nested Dictionary Works!
 
 # Muzan needs the same randomizer for his fighting style!
+
 Demon_Style = random.choice(list(Muzan))
 
-if Demon_Style == "Absorption":
-    form = random.choice(list(Muzan["Absorption"]))
-    technique = Muzan["Absorption"][form]
+# Could Muzan and Tanjiro be functions? To compress the conditionals into a function, with temporary variables within? The only thing I care being permanent is the dictionary.
+def Muzan (Demon_Style):
+    if Demon_Style == "Absorption":
+            form = random.choice(list(Muzan["Absorption"]))
+            Character = random.choice(list(Muzan["Akaza","Doma"]))
+            Damage = Muzan["Absorption"][form][Character]
 
-    print(form)
-    print(technique)
+    return
 
 
-# print(Demon_Style)
 
+
+
+# def Combat (Tanjiro, Muzan):
+#     tanjiro_attacks = false
+    
 
 ##########
 #Tatakae!#
@@ -131,24 +142,16 @@ Tanjiro_HP = 10_000
 Muzan_HP = 90_000
 
 # Randomizer for who attacks...
-Muzan_vs_Tanjiro = [1,0,1,0,1,0,1,0,1,0,1] # Muzan == 0, Tanjiro == 1.
+Muzan_vs_Tanjiro = [1,0,1,0,1,0,1,0,1,0,1,0,1,0,1] # Muzan == 0, Tanjiro == 1. # How Could I make this infinite? and with their names?
 Attack_Selector = random.choice(Muzan_vs_Tanjiro)
-print(Attack_Selector)
-
+# print(Attack_Selector)
+ 
+# Line 71 has a good solution for this! Make Tanjiro's Style Randomizer a functiton to call it here. So if appears after.. I mention Tanjiro's Name.
 if Attack_Selector == 1:
-    print(breathing_style)
+    print("Tanjiro!")
 
 elif Attack_Selector == 0:
-    print(Demon_Style)
-
-
-
-
-# def Combat (Tanjiro, Muzan):
-#     tanjiro_attacks = false
-    
-
-    
+    print("Muzan!")
         
 
 
